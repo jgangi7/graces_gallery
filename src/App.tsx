@@ -1,25 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+
+const Home = () => (
+  <main className="main-content">
+    <div className="hero">
+      <div className="hero-title-outline">GRACES GALLERY</div>
+      <div className="hero-title">- - - - CATCH PHRASE - - - -</div>
+      <Link to="/works" className="hero-btn">VIEW WORK</Link>
+    </div>
+  </main>
+);
+
+const Works = () => <main className="main-content"><h2>Works</h2></main>;
+const Shop = () => <main className="main-content"><h2>Shop</h2></main>;
+const Information = () => <main className="main-content"><h2>Information</h2></main>;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header className="header">
+        <nav>
+          <Link to="/works" className="nav-link left">Works</Link>
+          <Link to="/" className="nav-link center">Graces Gallery</Link>
+          <span className="nav-link right">
+            <Link to="/information">Information</Link> / <Link to="/shop">Shop</Link>
+          </span>
+        </nav>
       </header>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/information" element={<Information />} />
+      </Routes>
+      <footer className="footer">
+        <div>
+          Copyright 2025. All Rights Reserved. <span className="footer-desc"></span>
+        </div>
+        <div className="footer-links">
+          Email / Instagram
+        </div>
+      </footer>
+    </>
   );
 }
 

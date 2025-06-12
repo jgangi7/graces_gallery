@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Russo+One&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Share Tech Mono', monospace;
+  background: #fff;
+  color: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0 0 0;
+  position: relative;
+  font-size: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-link.left {
+  position: absolute;
+  left: 20px;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-link.center {
+  margin: 0 auto;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: underline;
+  color: #000;
+}
+
+.nav-link.right {
+  position: absolute;
+  right: 20px;
+  font-family: 'Share Tech Mono', monospace;
+  color: #000;
+}
+
+.nav-link.right a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+.main-content {
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero-title-outline {
+  font-family: 'Russo One', sans-serif;
+  font-size: 3vw;
+  color: #fff;
+  -webkit-text-stroke: 2px #000;
+  text-stroke: 2px #000;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 4vw;
+  font-weight: normal;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.hero-btn {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.3vw;
+  padding: 12px 36px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  margin-top: 30px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.footer {
+  width: 100vw;
+  padding: 20px 30px 10px 30px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+.footer-desc {
+  margin-left: 20px;
+  font-size: 15px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.footer-links {
+  margin-top: 5px;
+  font-size: 15px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+@media (max-width: 900px) {
+  .hero-title-outline, .hero-title {
+    font-size: 7vw;
   }
-  to {
-    transform: rotate(360deg);
+  .hero-btn {
+    font-size: 3vw;
+    padding: 10px 20px;
   }
 }

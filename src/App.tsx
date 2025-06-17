@@ -1,20 +1,19 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import Works from './pages/Works';
+import Shop from './pages/Shop';
+import Information from './pages/Information';
 
 const Home = () => (
   <main className="main-content">
     <div className="hero">
       <div className="hero-title-outline">GRACES GALLERY</div>
-      <div className="hero-title">- - - - CATCH PHRASE - - - -</div>
+      <div className="hero-title">LIVE LOUD / STYLED AND RILED</div>
       <Link to="/works" className="hero-btn">VIEW WORK</Link>
     </div>
   </main>
 );
-
-const Works = () => <main className="main-content"><h2>Works</h2></main>;
-const Shop = () => <main className="main-content"><h2>Shop</h2></main>;
-const Information = () => <main className="main-content"><h2>Information</h2></main>;
 
 function App() {
   return (

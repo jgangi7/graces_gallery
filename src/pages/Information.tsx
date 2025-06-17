@@ -1,0 +1,29 @@
+import React from 'react';
+import './Information.css';
+
+const Information: React.FC = () => {
+  return (
+    <div className="info-container">
+      <section className="info-section">
+        <h2 className="info-heading">CAPABILITIES</h2>
+        <div className="info-capabilities">
+          Illustration / Packaging / Signage / Creative Validation / Portraits / Painting
+        </div>
+      </section>
+      <section className="info-section">
+        <p className="info-description">
+          Led by Grace Blalock, Grace Gallery is a space to showcase her work and connect with others. As an Austin born artist, I am always looking to create and share. For inquiries, please contact via email.
+        </p>
+      </section>
+      <section className="info-contact-section">
+        <div className="info-label">Email</div>
+        <div className="info-contact-box" onClick={() => window.open('mailto:gracesgallery@gmail.com', '_blank')}>GRACESGALLERY@GMAIL.COM</div>
+        <div className="info-label">Instagram</div>
+        <div className="info-contact-box" onClick={() => window.open('https://www.instagram.com/graciepaintz', '_blank')}>@GRACIEPAINTZ</div>
+      </section>
+      <div className="info-logo-placeholder">[LOGO]</div>
+    </div>
+  );
+};
+
+export default Information; 

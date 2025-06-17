@@ -44,8 +44,6 @@
 
 .info-contact-box:hover {
   background: #a3e86d;
-  cursor: pointer;
-  transition: background 0.2s;
 }
 
 /* Section Headings */

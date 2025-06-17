@@ -130,7 +130,12 @@ nav {
   margin-top: 5px;
   font-size: 15px;
   font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+
 
 @media (max-width: 900px) {
   .hero-title-outline, .hero-title {

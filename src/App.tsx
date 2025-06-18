@@ -34,11 +34,11 @@ function App() {
         <Route path="/information" element={<Information />} />
       </Routes>
       <footer className="footer">
-        <div>
-          Copyright 2025. All Rights Reserved. <span className="footer-desc"></span>
-        </div>
         <div className="footer-links">
           <div className="footer-link" onClick={() => window.open('mailto:gracesgallery@gmail.com', '_blank')}>Email</div> / <div className="footer-link" onClick={() => window.open('https://www.instagram.com/graciepaintz', '_blank')}>Instagram</div>
+        </div>
+        <div>
+          Copyright 2025. All Rights Reserved. <span className="footer-desc"></span>
         </div>
       </footer>
     </>

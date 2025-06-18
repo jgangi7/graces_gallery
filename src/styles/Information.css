@@ -70,12 +70,3 @@
   margin: 0 auto 32px auto;
   line-height: 1.5;
 }
-
-/* Logo Placeholder */
-.info-logo-placeholder {
-  margin-top: 32px;
-  font-size: 2rem;
-  font-family: 'Roboto Mono', 'Consolas', monospace;
-  opacity: 0.5;
-  text-align: center;
-} 

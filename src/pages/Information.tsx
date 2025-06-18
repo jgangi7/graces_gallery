@@ -1,5 +1,5 @@
 import React from 'react';
-import './Information.css';
+import '../styles/Information.css';
 
 const Information: React.FC = () => {
   return (
@@ -21,9 +21,7 @@ const Information: React.FC = () => {
         <div className="info-label">Instagram</div>
         <div className="info-contact-box" onClick={() => window.open('https://www.instagram.com/graciepaintz', '_blank')}>@GRACIEPAINTZ</div>
       </section>
-      <div className="info-logo-placeholder">
-        <img src="/logo-distort.png" alt="Graces Gallery Logo" style={{ maxWidth: '220px', width: '100%', display: 'block', margin: '0 auto' }} />
-      </div>
+      <img src="/logo-distort.png" alt="Graces Gallery Logo" style={{ maxWidth: '220px', width: '100%', display: 'block', margin: '0 auto', marginBottom: '10vh'}} />
     </div>
   );
 };

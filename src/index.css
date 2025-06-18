@@ -1,6 +1,19 @@
-body {
+html, body, #root {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
   font-family: 'Share Tech Mono', monospace;
   background: #fff;
   color: #000;

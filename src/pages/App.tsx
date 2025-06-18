@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-import Works from './pages/Works';
-import Shop from './pages/Shop';
-import Information from './pages/Information';
+import '../styles/App.css';
+import Works from './Works';
+import Shop from './Shop';
+import Information from './Information';
 
 const Home = () => (
   <main className="main-content">

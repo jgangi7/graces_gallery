@@ -12,7 +12,7 @@ const Information: React.FC = () => {
       </section>
       <section className="info-section">
         <p className="info-description">
-          Led by Grace Blalock, Grace Gallery is a space to showcase her work and connect with others. As an Austin born artist, I am always looking to create and share. For inquiries, please contact via email.
+          Led by Grace Blalock, Graces Gallery is a space to showcase her work and connect with others. As an Austin born artist, she is always looking to create and share. For inquiries, please contact via email.
         </p>
       </section>
       <section className="info-contact-section">
@@ -21,7 +21,9 @@ const Information: React.FC = () => {
         <div className="info-label">Instagram</div>
         <div className="info-contact-box" onClick={() => window.open('https://www.instagram.com/graciepaintz', '_blank')}>@GRACIEPAINTZ</div>
       </section>
-      <div className="info-logo-placeholder">[LOGO]</div>
+      <div className="info-logo-placeholder">
+        <img src="/logo-distort.png" alt="Graces Gallery Logo" style={{ maxWidth: '220px', width: '100%', display: 'block', margin: '0 auto' }} />
+      </div>
     </div>
   );
 };

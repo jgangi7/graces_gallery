@@ -1,46 +1,87 @@
-# Getting Started with Create React App
+# Graces Gallery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, minimalist portfolio website for showcasing artistic works. Built with React and TypeScript, featuring a custom cursor and responsive design. Built for a friend!
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🎨 Clean, minimalist design
+- 🖱️ Custom cursor with hover effects
+- 📱 Fully responsive layout
+- 🖼️ Dynamic image gallery
+- 📝 Information page with contact details
+- 🛍️ Shop section (coming soon)
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React 19
+- TypeScript
+- React Router DOM
+- CSS3 with Flexbox/Grid
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v16 or higher)
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository
+```bash
+git clone 
+cd graces_gallery
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server
+```bash
+npm start
+```
 
-### `npm run eject`
+The application will open in your default browser at `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+graces_gallery/
+├── public/
+│   ├── works/         # Gallery images
+│   ├── favicon.ico
+│   └── index.html
+└── src/
+    ├── pages/         # Page components
+    ├── styles/        # CSS files
+    └── index.tsx      # Entry point
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Features in Detail
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Custom Cursor
+- Outlined circle cursor by default
+- Fills on hover over interactive elements
+- Smooth transitions
 
-## Learn More
+### Works Gallery
+- Responsive image display
+- Hover animations
+- Optimized for various screen sizes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Information Page
+- Contact information
+- Artist bio
+- Capabilities list
+- Social media links
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+
+This is a personal project built for a friend to showcase her portfolio, but if you find any bugs or have suggestions, feel free to open an issue.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
